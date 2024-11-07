@@ -6,3 +6,6 @@
 
 #--Nodejs--#
 node-modules/
+
+#--JetBrains--#
+.idea
