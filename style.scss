@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+
+
+$Yellow : #FCB72B;
+$Dark_navy : #495567;
+$Dim_grey : #939CAA;
+$Light_grey : #E5ECF4;
+$Snow : #F2F5F9;
+$Light_yellow : #FFF4DF;
+
+button {
+    background-color: $Yellow;
+    width: 195px;
+    height: 53px;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    border: 2px solid $Yellow ;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: rgba($color: white, $alpha: 0);
+    color: $Yellow;
+}
