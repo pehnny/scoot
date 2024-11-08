@@ -3,7 +3,7 @@
 *.css.map
 *.sass.map
 *.scss.map
-**/*.css
+components/*.css
 
 #--Nodejs--#
 node-modules/
