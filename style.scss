@@ -1,7 +1,9 @@
-@use "style/test";
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+@use "reset/reset.scss";
+@use "components/fonts.scss";
+@use "components/color-var.scss";
+@use "components/header.scss";
+@use "components/footer.scss";
+@use "components/button.scss";
 
 
 $Yellow : #FCB72B;
