@@ -1,0 +1,19 @@
+@use "color-var.scss";
+
+button {
+    background-color: $Yellow;
+    width: 195px;
+    height: 53px;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    border: 2px solid $Yellow ;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: rgba($color: white, $alpha: 0);
+    color: $Yellow;
+}
