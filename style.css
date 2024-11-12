@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
-* {
-  border: 1px solid black;
-}
-
 body {
   width: 100%;
 }
@@ -19,6 +15,14 @@ nav {
   justify-content: center;
 }
 
+.head svg:first-child {
+  align-self: flex-start;
+}
+
+.head svg:last-child {
+  margin: 0 auto;
+}
+
 #burger {
   width: 19.69px;
   height: 16px;
@@ -30,14 +34,50 @@ nav {
   height: 20px;
 }
 
-#home_header {
-  overflow: hidden;
-  height: 650px;
+header button {
+  display: none;
 }
 
-#home_header img {
-  -o-object-fit: fill;
-     object-fit: fill;
+.baneer {
+  text-align: center;
+  width: 100%;
+  height: 650px;
+  background-image: url("C:/Users/mttor/Documents/Becode/Projet_de_groupe/scoot/img/home_page/Header.jpg");
+  background-position: right center;
+  z-index: 1;
+}
+
+.baneer article {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  width: 311px;
+  height: 356px;
+  top: 179px;
+  left: 32px;
+  gap: 0px;
+  opacity: 0px;
+  margin: auto;
+}
+
+.baneer svg {
+  width: 447px;
+  height: 138px;
+  top: 542px;
+  left: -312px;
+  gap: 0px;
+  border: 15px 0px 0px 0px;
+  opacity: 0px;
+  z-index: 4;
+}
+
+.opacity {
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
 }
 
 button {
@@ -56,4 +96,6 @@ button {
 button:hover {
   background-color: rgba(255, 255, 255, 0);
   color: #FCB72B;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
