@@ -1,5 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+* {
+  border: 1px solid black;
+}
+
+body {
+  width: 100%;
+}
+
+nav {
+  display: none;
+}
+
+.head {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#burger {
+  width: 19.69px;
+  height: 16px;
+  right: 99px;
+}
+
+#logo {
+  width: 75.5px;
+  height: 20px;
+}
+
+#home_header {
+  overflow: hidden;
+  height: 650px;
+}
+
+#home_header img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 button {
   background-color: #FCB72B;
   width: 195px;
@@ -16,6 +56,4 @@ button {
 button:hover {
   background-color: rgba(255, 255, 255, 0);
   color: #FCB72B;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
