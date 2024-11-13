@@ -1,41 +1,195 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+main h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.156rem;
+  color: #495567;
+  font-weight: bold;
+}
+main h2 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.134rem;
+  color: #495567;
+  font-weight: bold;
+}
+main h3 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.112rem;
+  color: #495567;
+  font-weight: bold;
+}
+main h4 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.067rem;
+  color: #495567;
+  font-weight: bold;
+}
+main body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: #495567;
+}
+
+* {
+  margin: 0;
+}
+
 body {
   width: 100%;
 }
 
-nav {
+header button {
   display: none;
+  margin-left: 32px;
+  position: relative;
+  top: 610px;
+  z-index: 6;
+}
+
+header nav ul {
+  display: none;
+  position: absolute;
+  top: 64px;
+  z-index: 5;
+  width: 68%;
+  height: 586px;
+  background-color: #495567;
+  padding-left: 32px;
+  padding-top: 64px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+header nav ul li a {
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
 }
 
 .head {
-  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 17.5px;
 }
 
 .head svg:first-child {
-  align-self: flex-start;
+  position: absolute;
+  left: 24px;
 }
 
-.head svg:last-child {
-  margin: 0 auto;
+header {
+  height: 64px;
 }
 
-#burger {
-  width: 19.69px;
-  height: 16px;
-  right: 99px;
+header:first-child:hover {
+  cursor: pointer;
 }
 
-#logo {
-  width: 75.5px;
-  height: 20px;
+@media (min-width: 768px) {
+  header {
+    top: 0;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  header nav {
+    width: 523px;
+    display: flex;
+    position: relative;
+    height: 25px;
+    top: 0;
+    right: 24px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  header nav ul {
+    background-color: rgba(255, 255, 255, 0);
+    width: 249px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  header button {
+    display: block;
+    top: 0;
+    margin: 0 24px;
+  }
+  header nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li a {
+    color: #939CAA;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  .desk_header {
+    width: 1106px;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+  .head {
+    position: relative;
+    top: 0;
+    left: 24px;
+  }
+  .head svg:first-child {
+    display: none;
+  }
+  .head svg:last-child {
+    margin: 0 24px;
+  }
+}
+button {
+  background-color: #FCB72B;
+  width: 195px;
+  height: 53px;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  border: 2px solid #FCB72B;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-header button {
-  display: none;
+button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #FCB72B;
 }
 
 .baneer {
@@ -78,24 +232,6 @@ header button {
   background-color: black;
   opacity: 0.5;
   z-index: 2;
-}
-
-button {
-  background-color: #FCB72B;
-  width: 195px;
-  height: 53px;
-  color: white;
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 25px;
-  border: 2px solid #FCB72B;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 0);
-  color: #FCB72B;
 }
 
 /*# sourceMappingURL=style.css.map */

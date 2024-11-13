@@ -1,50 +1,179 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+main h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.156rem;
+  color: #495567;
+  font-weight: bold;
+}
+main h2 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.134rem;
+  color: #495567;
+  font-weight: bold;
+}
+main h3 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.112rem;
+  color: #495567;
+  font-weight: bold;
+}
+main h4 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.067rem;
+  color: #495567;
+  font-weight: bold;
+}
+main body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: #495567;
+}
+
+* {
+  margin: 0;
+}
+
 body {
   width: 100%;
 }
 
-nav {
+header button {
   display: none;
+  margin-left: 32px;
+  position: relative;
+  top: 610px;
+  z-index: 6;
+}
+
+header nav ul {
+  display: none;
+  position: absolute;
+  top: 64px;
+  z-index: 5;
+  width: 68%;
+  height: 586px;
+  background-color: #495567;
+  padding-left: 32px;
+  padding-top: 64px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+header nav ul li a {
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
 }
 
 .head {
-  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  position: relative;
+  top: 17.5px;
 }
 
-#burger {
-  width: 19.69px;
-  height: 16px;
-  right: 99px;
+.head svg:first-child {
+  position: absolute;
+  left: 24px;
 }
 
-#logo {
-  width: 75.5px;
-  height: 20px;
+header {
+  height: 64px;
 }
 
-header button {
-  display: none;
+header:first-child:hover {
+  cursor: pointer;
 }
 
-.baneer {
-  text-align: center;
-  width: 100%;
-  height: 650px;
+@media (min-width: 768px) {
+  header {
+    top: 0;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  header nav {
+    width: 523px;
+    display: flex;
+    position: relative;
+    height: 25px;
+    top: 0;
+    right: 24px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  header nav ul {
+    background-color: rgba(255, 255, 255, 0);
+    width: 249px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  header button {
+    display: block;
+    top: 0;
+    margin: 0 24px;
+  }
+  header nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li a {
+    color: #939CAA;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  .desk_header {
+    width: 1106px;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+  .head {
+    position: relative;
+    top: 0;
+    left: 24px;
+  }
+  .head svg:first-child {
+    display: none;
+  }
+  .head svg:last-child {
+    margin: 0 24px;
+  }
 }
-
-.baneer:before {
-  background-image: url("C:/Users/mttor/Documents/Becode/Projet_de_groupe/scoot/img/home_page/Header.jpg");
-  background-position: right center;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-}
-
 button {
   background-color: #FCB72B;
   width: 195px;
@@ -61,4 +190,48 @@ button {
 button:hover {
   background-color: rgba(255, 255, 255, 0);
   color: #FCB72B;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.baneer {
+  text-align: center;
+  width: 100%;
+  height: 650px;
+  background-image: url("C:/Users/mttor/Documents/Becode/Projet_de_groupe/scoot/img/home_page/Header.jpg");
+  background-position: right center;
+  z-index: 1;
+}
+
+.baneer article {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  width: 311px;
+  height: 356px;
+  top: 179px;
+  left: 32px;
+  gap: 0px;
+  opacity: 0px;
+  margin: auto;
+}
+
+.baneer svg {
+  width: 447px;
+  height: 138px;
+  top: 542px;
+  left: -312px;
+  gap: 0px;
+  border: 15px 0px 0px 0px;
+  opacity: 0px;
+  z-index: 4;
+}
+
+.opacity {
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=style.css.map */
