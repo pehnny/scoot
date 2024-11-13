@@ -3,47 +3,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
 
 
-h1 {
-  font-family: "Space Mono", sans-serif;
-  font-size: 3.5rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.156rem;
-  color: color.$Dark_navy;
-  font-weight:bold;
+main {
+  h1 {
+    font-family: "Space Mono", sans-serif;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.156rem;
+    color: color.$Dark_navy;
+    font-weight:bold;
+  }
 
-}
+  h2 {
+    font-family: "Space Mono", sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -0.134rem;
+    color: color.$Dark_navy;
+    font-weight:bold;
+  }
 
-h2{
-  font-family: "Space Mono", sans-serif;
-  font-size: 3rem;
-  line-height: 3rem;
-  letter-spacing: -0.134rem;
-  color: color.$Dark_navy;
-  font-weight:bold;
+  h3 {
+    font-family: "Space Mono", sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing:-0.112rem;
+    color: color.$Dark_navy;
+    font-weight:bold;
+  }
 
-}
+  h4 {
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.5rem;
+    line-height : 1.75rem;
+    letter-spacing:-0.067rem;
+    color: color.$Dark_navy;
+    font-weight:bold;
+  }
 
-h3{
-  font-family: "Space Mono", sans-serif;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing:-0.112rem;
-  color: color.$Dark_navy;
-  font-weight:bold;
-}
-
-h4{
-  font-family: "Space Mono", sans-serif;
-  font-size: 1.5rem;
-  line-height : 1.75rem;
-  letter-spacing:-0.067rem;
-  color: color.$Dark_navy;
-  font-weight:bold;
-}
-
-body {
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 0.938rem;
-  line-height: 1.563rem;
-  color: color.$Dark_navy
+  body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    color: color.$Dark_navy
+  }
 }
