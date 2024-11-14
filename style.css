@@ -207,21 +207,17 @@ button:hover {
   z-index: 3;
   width: 311px;
   height: 356px;
-  top: 179px;
-  left: 32px;
   gap: 0px;
   opacity: 0px;
   margin: auto;
 }
 
 .baneer svg {
+  position: absolute;
+  top: 478px;
+  right: 241px;
   width: 447px;
   height: 138px;
-  top: 542px;
-  left: -312px;
-  gap: 0px;
-  border: 15px 0px 0px 0px;
-  opacity: 0px;
   z-index: 4;
 }
 
@@ -229,9 +225,57 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 650px;
-  background-color: black;
-  opacity: 0.5;
+  background-color: #495567;
+  opacity: 0.7;
   z-index: 2;
+}
+
+.baneer article h1 {
+  width: 311px;
+  height: 120px;
+  color: white;
+  font-family: Space Mono;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1.7857142687px;
+  text-align: center;
+  margin-top: 115px;
+}
+
+.baneer article p {
+  width: 311px;
+  height: 125px;
+  color: white;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 34px;
+}
+
+@media (min-width: 768px) {
+  .baneer article {
+    width: 573px;
+    height: 296px;
+  }
+  .baneer article h1 {
+    width: 573px;
+    height: 112px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
+  .baneer article p {
+    width: 573px;
+    height: 75px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
