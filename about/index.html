@@ -21,7 +21,7 @@
                     </svg>           
                 </div>
                 <ul>
-                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="Home/index.html">About</a></li>
                     <li><a href="locations/index.html">Location</a></li>
                     <li><a href="careers/index.html">Careers</a></li>
                 </ul>
@@ -29,6 +29,17 @@
             <button>Get Scootin</button>
         </div>
     </header>
+    <section class="baneer" id="about">
+        <div class="opacity"></div>
+        <article>
+            <h1>About</h1>
+        </article>
+        <div class="containerpoints">
+            <div class="points"></div>
+            <div class="points"></div>
+            <div class="points" id="third_point"></div>
+        </div>
+    </section>
 <section class="topics">
 
     <article>
@@ -229,5 +240,24 @@
         </svg>
     </a>
 </footer>
+<script>
+    // Fonction externe pour gérer l'affichage du menu
+    function toggleNavDisplay() {
+        const butt = document.querySelector('header button')
+        const nav = document.querySelector('header nav ul');
+        if (nav.style.display === 'block' && butt.style.display === 'block') {
+            nav.style.display = 'none';
+            butt.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+            butt.style.display = 'block';
+        }
+    }
+    
+    // Ajout de l'écouteur d'événement
+    const firstSvg = document.querySelector('.head svg:first-child');
+    firstSvg.addEventListener('click', toggleNavDisplay);
+    
+</script>
 </body>
 </html>
