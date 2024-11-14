@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: #939CAA;
+}
+
 main h1 {
   font-family: "Space Mono", sans-serif;
   font-size: 3.5rem;
@@ -31,16 +38,6 @@ main h4 {
   letter-spacing: -0.067rem;
   color: #495567;
   font-weight: bold;
-}
-main body {
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 0.938rem;
-  line-height: 1.563rem;
-  color: #495567;
-}
-
-* {
-  border: 1px solid black;
 }
 
 body {

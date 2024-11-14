@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.topics{
+  position: relative;
+  width : 311px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+  .topics img {
+
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 3.5rem;
+  }
+
+  .topics article {
+    width : 311px;
+  }
+    .topics aside {
+      width : 311px;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+.h2title{
+  height: 64px;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pdescribe{
+  margin-bottom: 7.5rem;
+  text-align: center;
+}
+
+#fleche1 {
+  transform: scaleX(-1) scaleY(-1);
+  position: absolute;
+  top: 128px;
+  right: -135px;
+  overflow: hidden;
+
+}
+
+#fleche2 {
+  position: absolute;
+  top: 683px;
+  right:0;
+}
+
+
+
+@media (min-width: 768px) {
+
+  body{
+    width: 100%;
+  }
+
+  .topics{
+    width: 954px;
+    align-items: center;
+    overflow-x: hidden;
+
+  }
+
+  .topics img{
+    width: 445px
+  ;
+  }
+.arcdecercle{
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background: #E5ECF4;
+}
+
+  
+}
+
+
