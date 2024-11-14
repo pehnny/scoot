@@ -1,6 +1,6 @@
 @use "color.scss";
 
-button {
+.main_button {
     background-color: color.$Yellow;
     width: 195px;
     height: 53px;
@@ -11,9 +11,8 @@ button {
     line-height: 25px;
     border: 2px solid color.$Yellow ;
     transition: background-color 0.2s, color 0.2s;
-}
-
-button:hover {
-    background-color: rgba($color: white, $alpha: 0);
-    color: color.$Yellow;
+    &:hover {
+        background-color: rgba($color: white, $alpha: 0);
+        color: color.$Yellow;
+    }
 }
