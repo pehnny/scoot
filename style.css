@@ -53,10 +53,6 @@ footer h4 {
   font-weight: bold;
 }
 
-* {
-  border: 1px solid black;
-}
-
 body {
   width: 100%;
 }
@@ -213,6 +209,10 @@ nav {
 }
 .footer__infos__content__title {
   color: #FFFFFF;
+}
+.footer__infos__content__title a {
+  color: unset;
+  text-decoration: none;
 }
 .footer__infos__content__links {
   color: #939CAA;

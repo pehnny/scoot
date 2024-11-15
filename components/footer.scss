@@ -134,6 +134,10 @@ $diameter: 347px;
 
             &__title {
                 color: #FFFFFF;
+                & a {
+                    color: unset;
+                    text-decoration: none;
+                }
             }
 
             &__links {
