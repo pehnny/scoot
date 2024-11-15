@@ -1,0 +1,147 @@
+@use "color.scss";
+
+* {
+    
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header button {
+    display: none;
+    margin-left: 32px;
+    position: relative;
+        top: 610px;
+    z-index: 6;
+}
+
+header nav ul {
+    display: none;
+    position: absolute;
+        top: 64px;
+    z-index: 5;
+    width: 68%;
+    height: 586px;
+    background-color: color.$Dark_navy;
+    padding-left: 32px;
+    padding-top: 64px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+
+header nav ul li a {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 17.5px;
+}
+
+.head svg:first-child {
+    position: absolute;
+    left: 24px;
+}
+
+header {
+    height: 64px;
+}
+
+header:first-child:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    header {
+        top: 0;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    header nav {
+        width: 523px;
+        display: flex;
+        position: relative;
+        height: 25px;
+            top: 0;
+            right: 24px;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        background-color: rgba($color: white, $alpha: 0.0);
+        width: 249px;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+            top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    header button {
+        display: block;
+        top: 0;
+        margin: 0 24px;
+
+    }
+
+    header nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        color: color.$Dim_grey;
+        font-family: Space Mono;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    .desk_header {
+        width: 1106px;
+        height: 53px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        position: relative;
+            top: 25%;
+        transform: translateY(-50%);
+        overflow: hidden;
+    }
+
+    .head {
+        position: relative;
+            top: 0;
+            left: 24px;
+    }
+
+    .head svg:first-child {
+        display: none;
+    }
+
+    .head svg:last-child {
+        margin: 0 24px;
+    }
+}

@@ -52,12 +52,42 @@ body {
   width: 100%;
 }
 
-nav {
+header button {
   display: none;
+  margin-left: 32px;
+  position: relative;
+  top: 610px;
+  z-index: 6;
+}
+
+header nav ul {
+  display: none;
+  position: absolute;
+  top: 64px;
+  z-index: 5;
+  width: 68%;
+  height: 586px;
+  background-color: #495567;
+  padding-left: 32px;
+  padding-top: 64px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+header nav ul li a {
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
 }
 
 .head {
-  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;

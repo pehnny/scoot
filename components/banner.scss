@@ -1,0 +1,225 @@
+@use "color.scss";
+
+#home {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    background-image: url("C:/Users/mttor/Documents/Becode/Projet_de_groupe/scoot/img/home_page/Header.jpg"); 
+    background-position: right center; 
+    z-index: 1;
+}
+
+#about {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    background-image: url("C:/Users/mttor/Documents/Becode/Projet_de_groupe/scoot/img/about/About_header.jpg"); 
+    background-position: right center; 
+    z-index: 1;
+}
+
+#careers, #locations {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    background-image: url("C:/Users/mttor/Documents/Becode/Projet_de_groupe/scoot/img/global/careers_locations_header.jpg"); 
+    background-position: right center; 
+    z-index: 1;
+}
+
+ article {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    width: 311px;
+    height: 356px;
+    margin: auto;
+}
+
+.baneer svg {
+    position: absolute;
+        top: 478px;
+        right: 241px;
+    width: 447px;
+    height: 138px;
+    z-index: 4;
+}
+
+#home .opacity {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background-color: color.$Dark_navy;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+#about .opacity, #careers .opacity, #locations .opacity {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: color.$Dark_navy;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+#about h1, #careers h1, #locations h1 {
+    height: 40px;
+    margin-top: 60px;
+}
+
+.baneer article h1 {
+    width: 311px;
+    height: 120px;
+    color: white;
+    font-family: Space Mono;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-top: 115px;
+}
+
+.baneer article p {
+    width: 311px;
+    height: 125px;
+    color: white;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+@media (min-width: 768px) {
+
+    .baneer svg {
+        right: 448px;
+    }
+
+    .baneer article {
+        width: 573px;
+        height: 296px;
+    }
+
+    .baneer article h1 {
+        width: 573px;
+        height: 112px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+    }
+
+    .baneer article p {
+        width: 573px;
+        height: 75px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    #home .containerpoints {
+        margin: 0;
+        position: absolute;
+            bottom: 45px;
+            right: -31px;
+        display: flex;
+    }
+
+    #about .containerpoints, #careers .containerpoints, #locations .containerpoints {
+        margin: 0;
+        position: absolute;
+            top: 69px;
+            right: -31px;
+        display: flex;
+    }
+
+    .points {
+        margin-right: 24px;
+        z-index: 7;
+        width: 62px;
+        height: 62px;
+        border: 3px solid white;
+        border-radius: 50%;
+
+    }
+
+    #third_point {
+        background-color: white;
+        margin-right: 0;
+    }
+
+    #about article, #careers article, #locations article {
+        margin-left: 97px;
+    }
+
+    #about, #careers, #locations {
+        height: 200px;
+        text-align: left;
+    }
+
+    #about .opacity, #careers .opacity, #locations .opacity{
+        height: 200px;
+    }
+
+    #about h1, #careers h1, #locations h1 {
+        height: 56px;
+        text-align: left;
+        margin-top: 72px;
+    }
+}
+
+@media (min-width: 1140px){
+    .baneer {
+        background-size: cover;
+    }
+
+    .baneer svg:first-child {
+        transform: scaleX(-1);
+        top: 355px;
+        left: -391px;
+    }
+
+    .baneer svg:last-child {
+        top: 355px;
+        left: 526px;
+    }
+
+    .baneer article {
+        margin-left: 165px;
+        height: 0;
+        width: 0;
+    }
+    
+    .baneer article h1 {
+        width: 500px;
+        text-align: left;
+        left: 0;
+        margin-top: 153px;
+    }
+
+    .baneer article p{
+        width: 405px;
+        height: 100px;
+        margin-left: 95px;
+    }
+
+    .baneer article button {
+        position: relative;
+        left: -55px;
+    }
+
+    .containerpoints {
+        top: 430px;
+    }
+
+    #about h1, #careers h1, #locations h1 {
+        margin-left: 165px;
+    }
+}
