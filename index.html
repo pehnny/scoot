@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -194,24 +195,5 @@
             </svg>
         </a>
     </footer>
-    <script>
-    // Fonction externe pour gérer l'affichage du menu
-    function toggleNavDisplay() {
-        const butt = document.querySelector('header button')
-        const nav = document.querySelector('header nav ul');
-        if (nav.style.display === 'block' && butt.style.display === 'block') {
-            nav.style.display = 'none';
-            butt.style.display = 'none';
-        } else {
-            nav.style.display = 'block';
-            butt.style.display = 'block';
-        }
-    }
-    
-    // Ajout de l'écouteur d'événement
-    const firstSvg = document.querySelector('.head svg:first-child');
-    firstSvg.addEventListener('click', toggleNavDisplay);
-    
-    </script>
 </body>
 </html>
